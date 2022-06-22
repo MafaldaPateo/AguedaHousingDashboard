@@ -50,7 +50,7 @@ from src.Plots_AguedaHousingDashboard import *
 # ---------- Deployment Config ----
 try:
     BASE_PATH = os.getenv("DASH_BASE_PATHNAME","/")
-    app = JupyterDash(__name__, external_stylesheets=[dbc.themes.YETI], url_base_pathname=BASE_PATH)
+    app = JupyterDash(__name__, external_stylesheets=[dbc.themes.YETI], server_url=BASE_PATH)
 except:
     BASE_PATH = '/'
     app = JupyterDash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
