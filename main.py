@@ -214,6 +214,6 @@ def func(n_clicks):
         "resources/Metainformação_dash.pdf"
     )
 
-
-if __name__ == "__main__":
-    app.run_server(debug=True, port=8007)
+# Added host for production server    
+if __name__ == '__main__':
+    app.run_server(host='0.0.0.0', debug=False)
