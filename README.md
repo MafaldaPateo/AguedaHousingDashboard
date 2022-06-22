@@ -36,7 +36,7 @@ ___
 
 ## **_Instalação_**
 
-<p> Após a instação do Python, proceda à instalação do ambiente <b> NOME DO AMBIENTE </b> que contém todas as bibliotecas necessárias para a utilização do  <i style= "color: #CBDFDF"> Águeda<i>Housing</i>Dashboard. </i>
+<p> Após a instação do Python, proceda à instalação dos dois ambientes que contém todas as bibliotecas necessárias para a utilização do  <i style= "color: #CBDFDF"> Águeda<i>Housing</i>Dashboard </i>, sendo que apenas o ficheiro do <i style= "color: #CBDFDF"> Águeda<i>Housing</i>Dashboard </i>com valores aleatórios necessita do ambiente Tese-dash_aleatorio.yml
 
 ```@python
 add conda env create -f DOC_AMBIENTE.YML
