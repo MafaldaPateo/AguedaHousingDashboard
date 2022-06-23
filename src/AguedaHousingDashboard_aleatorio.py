@@ -1,6 +1,3 @@
-#https://stackoverflow.com/questions/51149185/plotly-dash-error-loading-layout
-
-
 import dash
 # import random
 from dash import dcc
