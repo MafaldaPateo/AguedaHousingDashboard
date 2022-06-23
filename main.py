@@ -8,7 +8,7 @@ import dash_bootstrap_components as dbc
 import geopandas as gpd
 import pandas as pd
 from shapely import wkt
-
+import os
 
 # --- DEFINIÇÃO DE VARIÁVEIS INICIAIS
 # Todas estas variáveis são estáticas
@@ -45,7 +45,15 @@ from src.Plots_AguedaHousingDashboard import *
 # --- DEFINIÇÃO DO LAYOUT
 # É estático e cada elemento deverá vir de uma função init
 
-app = JupyterDash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+
+
+# ---------- Deployment Config ----
+try:
+    BASE_PATH = os.getenv("DASH_BASE_PATHNAME","/")
+    app = dash.Dash(__name__, external_stylesheets=[dbc.themes.YETI], url_base_pathname=BASE_PATH)
+except:
+    BASE_PATH = '/'
+    app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 app.layout = dbc.Container([
     dbc.Row([
@@ -214,6 +222,6 @@ def func(n_clicks):
         "resources/Metainformação_dash.pdf"
     )
 
-
-if __name__ == "__main__":
-    app.run_server(debug=True, port=8007)
+# Added host for production server    
+if __name__ == '__main__':
+    app.run_server(host='0.0.0.0', debug=False)

@@ -33,7 +33,11 @@ dash-renderer==1.9.0
 dash-table==5.0.0
 dask==2022.5.0
 datashader==0.13.0
+<<<<<<< HEAD
 datashape==0.5.4
+=======
+datashape
+>>>>>>> eab9238ff5eba56e21c980ba164d06a442f4a45d
 debugpy==1.5.1
 decorator==5.1.1
 defusedxml==0.7.1
@@ -51,7 +55,10 @@ folium==0.12.1.post1
 fonttools==4.30.0
 fsspec==2022.3.0
 future==0.18.2
+<<<<<<< HEAD
 GDAL==3.4.1
+=======
+>>>>>>> eab9238ff5eba56e21c980ba164d06a442f4a45d
 geographiclib==1.52
 geopandas==0.10.2
 geopy==2.2.0
@@ -124,8 +131,11 @@ PySocks==1.7.1
 pytesseract==0.3.9
 python-dateutil==2.8.2
 pytz==2021.3
+<<<<<<< HEAD
 pywin32==303
 pywinpty==2.0.2
+=======
+>>>>>>> eab9238ff5eba56e21c980ba164d06a442f4a45d
 PyYAML==6.0
 pyzmq==22.3.0
 requests==2.27.1
@@ -138,8 +148,13 @@ setuptools==60.9.3
 Shapely==1.8.2
 six==1.16.0
 sortedcontainers==2.4.0
+<<<<<<< HEAD
 SQLAlchemy==0.7.10
 sqlalchemy-migrate==0.13.0
+=======
+SQLAlchemy
+sqlalchemy-migrate
+>>>>>>> eab9238ff5eba56e21c980ba164d06a442f4a45d
 sqlparse==0.4.2
 stack-data==0.2.0
 statsmodels==0.13.2
@@ -168,4 +183,8 @@ xarray==0.20.1
 xlwt==0.7.2
 xyzservices==2022.3.0
 zict==2.0.0
+<<<<<<< HEAD
 zipp==3.7.0
+=======
+zipp==3.7.0
+>>>>>>> eab9238ff5eba56e21c980ba164d06a442f4a45d
